@@ -21,6 +21,14 @@
         .text-shadow {
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
+        /* Görselin yüklenememesi durumunda metin merkezlenir */
+        .image-container img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            aspect-ratio: 1 / 1; /* Kare format */
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -85,34 +93,54 @@
                 </div>
             </section>
 
-            <!-- Kişisel Resimler Galerisi (İstenen GitHub görsellerinin yer tutucuları) -->
+            <!-- Kişisel Resimler Galerisi (GitHub'dan çekilen görseller) -->
             <section class="bg-white p-6 sm:p-8 rounded-xl shadow-2xl border-t-4 border-green-600">
                 <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">Kişisel Anlar ve Görseller</h2>
                 <p class="text-gray-500 mb-6 italic">
-                    <!-- Kullanıcının belirttiği GitHub linkine atıfta bulunan açıklama -->
-                    *Aşağıdaki görseller, kullanıcının talep ettiği özel albümdeki (GitHub) resimlerin yerine geçici olarak eklenmiş yer tutuculardır. Gerçek resimlerin URL'leri ile değiştirilebilir.*
+                    *Aşağıdaki görseller, güncel dosya adları kullanılarak doğrudan GitHub'ın "raw" içerik adresinden çekilmektedir. Resimlerin yüklenip yüklenmediğini kontrol edin.*
                 </p>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <!-- Yer Tutucu Görsel 1 -->
-                    <div class="rounded-lg overflow-hidden shadow-md transform hover:scale-105 transition duration-300 cursor-pointer">
-                        <img src="https://placehold.co/300x300/4f46e5/ffffff?text=Bilim+ile" alt="Aziz Sancar Bilim Çalışması" class="w-full h-auto object-cover aspect-square">
+                    
+                    <!-- Resim 1 (aziz1.jpg) -->
+                    <div class="rounded-lg overflow-hidden shadow-md transform hover:scale-105 transition duration-300 cursor-pointer image-container">
+                        <img 
+                            src="https://raw.githubusercontent.com/SelimEvrenTURHAN/azizsancar/main/src/aziz1.jpg" 
+                            alt="Aziz Sancar Bilim Çalışması" 
+                            onerror="this.onerror=null; this.src='https://placehold.co/300x300/4f46e5/ffffff?text=Görsel+Bulunamadı';"
+                        >
                         <p class="text-center text-sm p-2 bg-indigo-100 text-indigo-900">Laboratuvar</p>
                     </div>
-                    <!-- Yer Tutucu Görsel 2 -->
-                    <div class="rounded-lg overflow-hidden shadow-md transform hover:scale-105 transition duration-300 cursor-pointer">
-                        <img src="https://placehold.co/300x300/10b981/ffffff?text=Ödül+Anı" alt="Aziz Sancar Ödül Töreni" class="w-full h-auto object-cover aspect-square">
+
+                    <!-- Resim 2 (aziz2.jpg) -->
+                    <div class="rounded-lg overflow-hidden shadow-md transform hover:scale-105 transition duration-300 cursor-pointer image-container">
+                        <img 
+                            src="https://raw.githubusercontent.com/SelimEvrenTURHAN/azizsancar/main/src/aziz2.jpg" 
+                            alt="Aziz Sancar Ödül Töreni" 
+                            onerror="this.onerror=null; this.src='https://placehold.co/300x300/10b981/ffffff?text=Görsel+Bulunamadı';"
+                        >
                         <p class="text-center text-sm p-2 bg-green-100 text-green-900">Tören</p>
                     </div>
-                    <!-- Yer Tutucu Görsel 3 -->
-                    <div class="rounded-lg overflow-hidden shadow-md transform hover:scale-105 transition duration-300 cursor-pointer">
-                        <img src="https://placehold.co/300x300/f59e0b/ffffff?text=Ailesi+ile" alt="Aziz Sancar Ailesi" class="w-full h-auto object-cover aspect-square">
+
+                    <!-- Resim 3 (aziz3.jpg) -->
+                    <div class="rounded-lg overflow-hidden shadow-md transform hover:scale-105 transition duration-300 cursor-pointer image-container">
+                        <img 
+                            src="https://raw.githubusercontent.com/SelimEvrenTURHAN/azizsancar/main/src/aziz3.jpg" 
+                            alt="Aziz Sancar Ailesi" 
+                            onerror="this.onerror=null; this.src='https://placehold.co/300x300/f59e0b/ffffff?text=Görsel+Bulunamadı';"
+                        >
                         <p class="text-center text-sm p-2 bg-amber-100 text-amber-900">Aile</p>
                     </div>
-                    <!-- Yer Tutucu Görsel 4 -->
-                    <div class="rounded-lg overflow-hidden shadow-md transform hover:scale-105 transition duration-300 cursor-pointer">
-                        <img src="https://placehold.co/300x300/ef4444/ffffff?text=Memleketi" alt="Aziz Sancar Memleketi" class="w-full h-auto object-cover aspect-square">
+
+                    <!-- Resim 4 (aziz4.jpg) -->
+                    <div class="rounded-lg overflow-hidden shadow-md transform hover:scale-105 transition duration-300 cursor-pointer image-container">
+                        <img 
+                            src="https://raw.githubusercontent.com/SelimEvrenTURHAN/azizsancar/main/src/aziz4.jpg" 
+                            alt="Aziz Sancar Memleketi" 
+                            onerror="this.onerror=null; this.src='https://placehold.co/300x300/ef4444/ffffff?text=Görsel+Bulunamadı';"
+                        >
                         <p class="text-center text-sm p-2 bg-red-100 text-red-900">Mardin</p>
                     </div>
+
                 </div>
             </section>
 
