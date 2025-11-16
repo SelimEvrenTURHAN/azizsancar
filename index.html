@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prof. Dr. Aziz Sancar: Yaşamı ve Başarıları</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Inter fontunu dahil etme (Tailwind tarafından varsayılan olarak desteklenir, ancak emin olmak için) */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* Hafif gri arka plan */
+        }
+        .section-heading {
+            border-left: 4px solid #007bff; /* Mavi çizgi detayı */
+            padding-left: 1rem;
+            color: #343a40;
+        }
+        .card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        /* Özel Nobel renk paleti */
+        .nobel-gold {
+            color: #b8860b;
+        }
+        .nobel-bg {
+            background-color: #fff9e6;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Ana Konteyner -->
+    <div class="min-h-screen flex flex-col items-center p-4 sm:p-8">
+
+        <!-- Başlık Bölümü (Hero Section) -->
+        <header class="w-full max-w-4xl bg-white rounded-xl shadow-lg p-6 md:p-10 mb-8 border-t-8 border-blue-600">
+            <div class="flex flex-col md:flex-row items-center">
+                <!-- Fotoğraf (Placeholder) -->
+                <div class="md:w-1/3 mb-6 md:mb-0 md:mr-8 flex justify-center">
+                    <!-- Aziz Sancar'a ait temsili bir görsel için placeholder -->
+                    <img src="https://placehold.co/200x250/007bff/ffffff?text=Aziz+Sancar"
+                         alt="Prof. Dr. Aziz Sancar'ın temsili fotoğrafı"
+                         class="rounded-lg shadow-xl object-cover"
+                         onerror="this.onerror=null; this.src='https://placehold.co/200x250/007bff/ffffff?text=Bilim+İnsanı';"
+                    >
+                </div>
+                <!-- Metin -->
+                <div class="md:w-2/3 text-center md:text-left">
+                    <h1 class="text-4xl sm:text-5xl font-extrabold text-blue-800 mb-2">
+                        Prof. Dr. Aziz Sancar
+                    </h1>
+                    <p class="text-xl text-gray-600 font-medium">
+                        Nobel Kimya Ödülü Sahibi Türk Bilim İnsanı
+                    </p>
+                    <p class="mt-4 text-sm text-gray-500 italic">
+                        "Çalışmalarımız, DNA onarım mekanizmalarını anlamamızı sağlıyor."
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Biyografi ve Başarılar Bölümü -->
+        <main class="w-full max-w-4xl space-y-8">
+
+            <!-- Giriş ve Yaşamı -->
+            <section class="bg-white p-6 md:p-8 rounded-xl card">
+                <h2 class="text-2xl font-semibold section-heading mb-4">Erken Yaşam ve Eğitim</h2>
+                <p class="text-base text-gray-700 leading-relaxed mb-4">
+                    Aziz Sancar, 8 Eylül 1946 tarihinde Mardin'in Savur ilçesinde, sekiz çocuklu orta gelirli çiftçi bir ailenin yedinci çocuğu olarak dünyaya geldi. İlk, orta ve lise eğitimini Mardin'de tamamladı. Lise yıllarında futbola ilgi duysa da, son sınıfta bilim yolunu seçerek İstanbul'a gitti.
+                </p>
+                <ul class="list-disc list-inside text-sm text-gray-600 ml-4 space-y-1">
+                    <li>1969: İstanbul Üniversitesi Tıp Fakültesi'nden birincilikle mezun oldu.</li>
+                    <li>1971-1973: İki yıl Savur'da hekimlik yaptı.</li>
+                    <li>1977: Dallas Teksas Üniversitesi'nde Moleküler Biyoloji alanında doktora (Ph.D.) derecesini aldı. Bu süreçte **Maxicell tekniğini** geliştirdi.</li>
+                    <li>1977-1982: Yale Üniversitesi'nde DNA onarımı üzerine doçentlik tezini tamamladı ve **Nükleotit Kesim Onarımı (NER)** araştırmalarına başladı.</li>
+                </ul>
+            </section>
+
+            <!-- Nobel Ödülü Bölümü -->
+            <section class="bg-yellow-50 p-6 md:p-8 rounded-xl card border-l-8 border-nobel-gold">
+                <h2 class="text-2xl font-semibold section-heading mb-4 text-nobel-gold">2015 Nobel Kimya Ödülü</h2>
+                <div class="text-base text-gray-700 leading-relaxed">
+                    <p class="mb-4">
+                        Prof. Dr. Aziz Sancar, 2015 yılında İsveçli Tomas Lindahl ve ABD'li Paul L. Modrich ile birlikte **"DNA onarımı"** üzerine yaptıkları mekanistik çalışmalar nedeniyle Nobel Kimya Ödülü'ne layık görüldü. Bu ödülle, bilim alanında Nobel kazanan ilk Türk bilim insanı oldu.
+                    </p>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <!-- Nobel Madalyası İkonu -->
+                        <span class="text-4xl nobel-gold">&#127941;</span>
+                        <p class="font-bold">Ödül Gerekçesi:</p>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 ml-4 space-y-2">
+                        <li>**DNA Onarımı Mekanizmaları:** Hücrelerin hasar gören DNA'yı nasıl onardığını ve genetik bilgiyi nasıl koruduğunu moleküler düzeyde haritalandırması.</li>
+                        <li>**UV Hasarı Onarımı:** Sancar'ın özellikle ultraviyole (UV) ışınlarının neden olduğu DNA hasarının onarılma mekanizmasını keşfetmesi (Nükleotit Kesim Onarımı - NER).</li>
+                        <li>**Kanser İlişkisi:** Bu çalışmalar, kanserin nedenleri ve tedavisi için yeni kapılar açmıştır.</li>
+                    </ul>
+                    <p class="mt-4 text-sm text-gray-500 italic">
+                        Nobel madalyasını ve sertifikasını, Türkiye Cumhuriyeti adına Anıtkabir'e bağışlamıştır.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Araştırma Alanları -->
+            <section class="bg-white p-6 md:p-8 rounded-xl card">
+                <h2 class="text-2xl font-semibold section-heading mb-4">Temel Araştırma Alanları</h2>
+                <p class="text-base text-gray-700 leading-relaxed mb-4">
+                    Sancar, 1997 yılından beri profesör olarak görev yaptığı Amerika Birleşik Devletleri'ndeki Kuzey Carolina Üniversitesi'nde (UNC) çalışmalarına devam etmektedir. Araştırmaları, yaşam bilimlerinin en temel konularına odaklanmıştır:
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <!-- Kart 1: DNA Onarımı -->
+                    <div class="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                        <h3 class="font-bold text-blue-700 mb-2">DNA Onarım Enzimatolojisi</h3>
+                        <p class="text-sm text-gray-600">Nükleotit Kesim Onarımı (NER) mekanizmasının moleküler düzeyde anlaşılması.</p>
+                    </div>
+                    <!-- Kart 2: Biyolojik Saat -->
+                    <div class="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                        <h3 class="font-bold text-blue-700 mb-2">Memeli Sirkadiyen Saati</h3>
+                        <p class="text-sm text-gray-600">Vücudun 24 saatlik ritminin (biyolojik saatin) DNA onarımını nasıl düzenlediği.</p>
+                    </div>
+                    <!-- Kart 3: Kanser Tedavisi -->
+                    <div class="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                        <h3 class="font-bold text-blue-700 mb-2">Kanser ve Sirkadiyen Saat</h3>
+                        <p class="text-sm text-gray-600">Kemoterapi ilaçlarının zamanlamasını biyolojik saate göre ayarlayarak etkinliği artırma (Kanser tedavisi üzerine çalışmalar).</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Önemli Ödüller (Nobel Hariç) -->
+            <section class="bg-white p-6 md:p-8 rounded-xl card">
+                <h2 class="text-2xl font-semibold section-heading mb-4">Başlıca Diğer Ödülleri</h2>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start">
+                        <span class="text-green-500 font-bold mr-2">&#10003;</span>
+                        <div><strong class="text-gray-900">2007:</strong> Vehbi Koç Ödülü</div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 font-bold mr-2">&#10003;</span>
+                        <div><strong class="text-gray-900">2005:</strong> ABD Ulusal Bilimler Akademisi üyeliği (Bu akademiye seçilen ilk ABD'li Türk)</div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 font-bold mr-2">&#10003;</span>
+                        <div><strong class="text-gray-900">1997:</strong> TÜBİTAK Bilim Ödülü</div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 font-bold mr-2">&#10003;</span>
+                        <div><strong class="text-gray-900">1984:</strong> ABD Ulusal Bilim Vakfı (NSF) Genç Araştırmacı Ödülü</div>
+                    </li>
+                </ul>
+            </section>
+
+        </main>
+
+        <!-- Alt Bilgi (Footer) -->
+        <footer class="w-full max-w-4xl mt-12 py-4 border-t border-gray-300 text-center text-sm text-gray-500">
+            &copy; 2025 Aziz Sancar Biyografi Sayfası. Bilgiler kamuya açık kaynaklardan derlenmiştir.
+        </footer>
+
+    </div>
+
+</body>
+</html>
